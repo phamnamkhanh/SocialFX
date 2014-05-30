@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.viniciusmlimarj.socialfx.application.DashboardController">
+   <children>
+      <ImageView fx:id="imageViewLogo" fitHeight="100.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@../../../../../../../../../Bibliotecas/Área%20de%20Trabalho/Javafx_logo_color.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="237.0" layoutY="56.0" text="Hashtag" />
+      <TextField fx:id="txtSearch" layoutX="286.0" layoutY="52.0" prefHeight="25.0" prefWidth="320.0" text="#javafx" />
+      <Button fx:id="btnSearch" layoutX="613.0" layoutY="52.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Label layoutX="914.0" layoutY="14.0" text="by @viniciuslimarj" />
+      <Label layoutX="941.0" layoutY="31.0" text="SocialFX v0.1" />
+      <ListView fx:id="tweetsListView" layoutX="14.0" layoutY="185.0" prefHeight="562.0" prefWidth="338.0" />
+      <ImageView fx:id="imageViewInstagram" fitHeight="480.0" fitWidth="640.0" layoutX="370.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="370.0" layoutY="157.0" text="Instagram" />
+      <Label fx:id="lblUserNameInstagram" layoutX="369.0" layoutY="183.0" prefHeight="17.0" prefWidth="640.0" />
+      <Label fx:id="lblCaptionTextInstagram" alignment="TOP_LEFT" layoutX="370.0" layoutY="200.0" prefHeight="63.0" prefWidth="640.0" />
+      <Label layoutX="14.0" layoutY="157.0" text="Twitter" />
+   </children>
+</AnchorPane>
