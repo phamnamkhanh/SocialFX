@@ -62,9 +62,6 @@ public class InstagramSearch {
 
 	private String loadNewPostsFromService() throws MalformedURLException, IOException {
 		String url = BASE_SERVICE_URL.replace("{tag}", tag).replace("{client_id}", clientId).replace("{maxTagId}", maxTagId);
-		System.out.println(url);
-		System.out.println("\n\n");
-
 		InputStream is = null;
 		try {
 			is = new URL(url).openStream();
